@@ -1,0 +1,666 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  input{
+    padding: 10px 8px !important;
+  }
+
+  TextField{
+    size: small;
+  }
+  .anticon {
+    display: inline-block;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 5rem;
+    -moz-osx-font-smoothing: grayscale;
+}
+.foot{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  bottom: 0px;
+  position: absolute;
+  z-index: 100;
+}
+.projects{
+    background-color: #dadbdf3b;
+    display: flex;
+    width: 45rem;
+    height: 25rem;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    border-radius: 1rem;
+    border: 0.5px solid #cccccc;
+    box-shadow: 0px 4px 8px rgb(38 38 38 / 20%);
+}
+.projectsHeader{
+  display: flex;
+  width: 100vw;
+  height: 73px;
+  align-items: center;
+  justify-content: space-between; 
+}
+.card-base{
+    text-align: 'center';
+    justify-content: 'center';
+    align-content: 'center';
+    padding: '10px';
+    margin-bottom: '100px';
+    margin-top: '100px';
+}
+.list-item{
+justify-content: left;
+height: 2.5rem;
+text-align: flex-start;
+margin-top: .3rem;
+padding: .4rem;
+padding-left: 1.5rem;
+min-width: 18.5rem;
+z-index: 3;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background-color: #87CEFA;
+  border-radius: .7rem;
+  /* transform: scale(1);  */
+  font-weight: 550;
+}
+.list-1{
+  margin-top: 60px; 
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(240, 248, 255, 0.219);
+  border: 0px solid;
+  box-shadow: 0px 0px 20px #d4d4d4;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100vh - 5rem);
+  align-self: baseline;
+  max-width: 18.5rem;
+  z-index: 2;
+  background-color: #fff;
+}
+.list-2{
+  margin-top: 60px; 
+  margin-left: .6rem;
+  border-radius: 20px;
+  justify-content: left ;
+  background-color: rgba(240, 248, 255, 0.219);
+  border: 0px solid;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 20px #d4d4d4;
+  align-self: baseline;
+  max-height: calc(100vh - 5rem);
+}
+
+.title-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-container{
+  width: 100%;
+  margin-left: .625rem;
+}
+.icon-container{
+  margin-left: 60px;
+}
+
+.header-container{
+  width: 100%;
+  min-height: 4rem;
+  background-color: #ffffff;
+}
+.s-3-box{
+  display: flex;
+  }
+
+.projects-maingrid{
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../../Assets/Icons/background1.png);
+  justify-content: center;
+}
+
+.projects-header{
+  max-height: 4.8rem;
+}
+.projects-footer{
+  
+  max-height: 3.5rem;
+  bottom: 0px;
+}
+
+.templet{
+  display: inline-block;
+}
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+.services-header{
+  max-height: 4.8rem;
+}
+.serviceLogos{
+  width: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+.nav1{
+  /* position: fixed; */
+  width: 100%;
+  height:73px;
+}
+
+
+.projects-backbutton{
+  position: absolute;
+  left: 47%;
+  right: 50%;
+  bottom:60px;
+}
+.proj-back{
+  padding: 5px !important;
+  padding-left: 10px !important;
+  margin-top: 20px !important;
+  width: 100px !important;
+  border-radius: 15px !important;
+  border: none !important;
+  font-weight: bold !important;
+  display: inline-block !important;
+  
+}
+.back-backbutton{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  bottom:50px;
+}
+.back{
+  padding: 5px !important;
+  padding-left: 10px !important;
+  margin-right: 15px !important;
+  width: 100px !important;
+  border-radius: 15px !important;
+  border: none !important;
+  font-weight: bold !important;
+  display: inline-block !important;
+}
+.s3card{
+  position:relative;
+  display: flex;
+  margin-top: -40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 400px !important;
+  max-height: 75vh;
+  overflow-y: auto;
+  border: 0px solid;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: baseline;
+}
+.s3card:hover{
+  transform: none;
+  background-color: #fff;
+}
+.MuiContainer-root {
+  /* width: 100%; */
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-self: center;
+}
+.GCPdata{
+  position:absolute;
+  display: flex;
+  left: 40%;
+  top: 20%;
+   /* margin-top: 80px; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  /* margin-left: auto;
+  margin-right: 20px; */
+  width: 22rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: 0px solid;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: baseline;
+  background-color: #fff;
+}
+.AzureData {
+  position:absolute;
+  display: flex;
+  left: 40%;
+  top: 20%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 22rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: 0px solid;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: baseline;
+  background-color: #fff;
+}
+.VPCcard{
+    position:relative;
+    display: flex;
+    margin-top: -40px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width: 400px !important;
+    max-height: 75vh;
+    overflow-y: auto;
+    border: 0px solid;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: baseline;
+    background-color: #fff;
+    
+}
+.VPCcard:hover{
+  transform: none;
+  background-color: #fff;
+}
+.gcpCard{
+  position: relative;
+    display: flex;
+    /* margin-top: 80px; */
+    width: 400px !important;
+    max-height: 75vh;
+    overflow-y: auto;
+    border: 0px solid;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem; 
+    background-color: #fff;
+    /* margin-left: 2.5rem; */
+}
+.VPCNetwork{
+    position: relative;
+    display: flex;
+    /* margin-top: 80px; */
+    padding-top: 50px !important;
+    width: 22rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    border: 0px solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    background-color: #fff;
+}
+.ServicesContainer{
+  position: absolute;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 360px;
+    border: 0px solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: baseline;
+    margin-top: 80px;
+}
+
+.ServicesContainerAws{
+  position: absolute;
+    display: flex;
+    width: 72%;
+    margin-left: 14%;
+    /* margin-right: 20%; */
+    min-height: 320px;
+    border: 0px solid;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: baseline;
+    margin-top: 80px;
+}
+
+.gcpCard{
+  position: relative;
+    display: flex;
+    margin-top: -40px;
+    width: 400px !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    height: 75vh;
+    border: 0px solid;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-self: baseline;
+    background-color: #fff;
+}
+.cardStyle{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2rem;  
+}
+
+.cardStyle:hover{
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color:  #87CEFA;
+}
+.AWSEC2card{
+  position:relative;
+  display: flex;
+  margin-top: -40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 400px !important;
+  max-height: 75vh;
+  overflow-y: auto;
+  border: 0px solid;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: baseline;
+  background-color: #fff;
+
+}
+.AWSEC2card:hover{
+transform: none;
+background-color: #fff;
+}
+.RDScard{
+  position:relative;
+  display: flex;
+  margin-top: -35px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 400px !important;
+  max-height: 72vh;
+  overflow-y: auto;
+  border: 0px solid;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: baseline;
+  background-color: #fff;
+}
+.verticalLine{
+  height:3.4rem;
+  border-left: 3px solid grey;
+}
+.mainLogo{
+  width: 19.3rem;
+  display:flex;
+  justify-content: space-evenly;
+}
+.closeicon{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+label {
+  display: block;
+  margin: .625rem 0;
+  /* text-align-last: left; */
+}
+
+label input {
+  display: block;
+}
+
+.errors {
+  background: red;
+  color: #fff;
+  margin: .625rem;
+}
+
+/* body{
+  background: linear-gradient(to left,rgb(82, 123, 76), #6495ED 30%,rgb(123, 76, 114));
+} */
+.usericon-dropdown{
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 5px; */
+  height: 220px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: rgba(207, 207, 207, 0.3);
+  backdrop-filter: blur(12px);
+  position: absolute;
+  right: 30px;
+  z-index: 10;
+  justify-content: center;
+  text-align: center;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  min-height: auto;
+  align-self: center;
+}
+MenuItem:hover{
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color:  #87CEFA;
+}
+.logout-button{
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  
+  margin-bottom: 10px !important;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.cancel-button{
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.appbar{
+  background-color: rgba(255, 255, 255, 0) !important; 
+  color: black !important;
+   box-shadow: none !important;
+   position: fixed;
+}
+.mainServices{
+  position: relative;
+  background-image: url(../../Assets/Icons/background1.png);
+  min-width: 100vw ;
+  min-height: 100vh;
+}
+
+.hamburger{
+    margin-left: -12px;
+    color: inherit;
+    padding: 12px;
+    font-size: 1.75rem;
+    margin-right: 16px !important;
+}
+.userbutton{
+  background-color: #dadbdf3b;
+  /* border-radius: 2rem; */
+  padding-left: 1rem;
+  height: 3rem;
+  margin-left: 5rem;
+  border-radius: 15px;
+  border: 0.5px solid #cccccc;
+  box-shadow: 0px 4px 8px rgb(38 38 38 / 20%);
+}
+.userbutton:hover{
+  cursor: pointer;
+  background-color: #87CEFA;
+}
+.configbutton{
+  background-color:#e7e7e7;
+  border-radius: 15px;
+  padding-left: .3rem;
+  height: 3rem;
+  padding-left: 1rem;
+ 
+  float: right;
+  width: 9rem !important;
+}
+.configbutton:hover{
+  cursor: pointer;
+  background-color: #87CEFA;
+}
+.GCPVMcard {
+  position:relative;
+  display: flex;
+  margin-top: -40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 400px !important;
+  max-height: 75vh;
+  overflow-y: auto;
+  border: 0px solid;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: baseline;
+}
+
+.cloudSQLcard {
+  position:relative;
+  display: flex;
+  margin-top: -40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 400px !important;
+  max-height: 75vh;
+  overflow-y: auto;
+  border: 0px solid;
+  border-radius: 10px;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: baseline;
+}
+#dropdown {
+  width: 250px;
+}
+/* scrollbar style */
+
+#style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+#style::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(135,206,250)),
+									   color-stop(0.72, rgb(73, 157, 209)),
+									   color-stop(0.86, rgb(25, 128, 192)));
+}
+
+.AWSEC2card .test {
+  border:  1px solid gray;
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin: 20px 0px;
+  background-color: #80808008;
+}
+
+.AWSEC2card .ec2Button{
+  border: 1px solid;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #3f51b5;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}

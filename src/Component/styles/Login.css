@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .App {
+      font-family: sans-serif;
+      text-align: center;
+    }
+  
+    input{
+      padding: 10px 8px !important;
+    }
+  
+    .anticon {
+      display: inline-block;
+      color: inherit;
+      font-style: normal;
+      line-height: 0;
+      text-align: center;
+      text-transform: none;
+      vertical-align: -0.125em;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      font-size: 5rem;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  .maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #fff; */
+    background-image: url(../../Assets/Icons/background1.png);
+  }
+  .cont1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-width: 55rem;
+    min-height: 34rem;
+    background-image: url(../../Assets/Icons/background.jpg);
+    background-size: cover;
+    padding-right: 0% !important;
+  }
+  .left{
+    width: 100%;
+    border: 0px solid;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-image: url(../Assets/Icons/background.jpg); */
+  }
+  .right{
+    width: 100%;
+    border: 0px solid;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+  }
+  .logo{
+    width: 15.5rem;
+    padding-bottom: .5rem;
+  }
+  .cont2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-width: 58rem;
+    min-height: 34rem;
+    background-image: url(../../Assets/Icons/background.jpg);
+    background-size: cover;
+    padding-right: 0% !important;
+  }

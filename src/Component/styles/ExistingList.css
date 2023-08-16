@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.appbar{
+  background-color: rgba(255, 255, 255, 0); 
+  color: black ;
+   box-shadow: none ;
+   position: absolute;
+}
+.title-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.mainLogo1{
+  display:flex;
+  left: 0px;
+  margin: 0;
+}
+.userbutton{
+  background-color: #dadbdf3b;
+  /* background-color: #87CEFA; */
+  border-radius: 2rem;
+  padding-left: .3rem;
+  border-radius: 15px;
+  border: 0.5px solid #cccccc;
+  box-shadow: 0px 4px 8px rgb(38 38 38 / 20%);
+}
+.userbutton:hover{
+  cursor: pointer;
+  background-color: #87CEFA;
+}
+.existing-pro-card{
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: row; 
+  margin: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* Card:hover {
+  cursor: pointer;
+  background-color: #87CEFA;
+  border-radius: .7rem;
+   
+  font-weight: 550;
+} */
+
+.projectsList{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100vw;
+  max-height: 350px;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 6px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(135,206,250)),
+									   color-stop(0.72, rgb(73, 157, 209)),
+									   color-stop(0.86, rgb(25, 128, 192)));
+}
+.card-container{
+  display: flex;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  justify-content: center;
+  align-items: center;
+
+  /* column-gap: 2rem; */
+}
+
+.projectService{
+  position: relative;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+.services{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card {
+  display: flex;
+  height: 11rem;
+  width: 13rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: -.1rem 0 1rem rgba(160, 160, 160, 0.5);
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+.card:not(:first-child) {
+  margin-left: -15px;
+}
+
+.card:hover {
+transform: translateY(-5px);
+transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+position: relative;
+left: 1.2rem;
+transition: 0.4s ease-out;
+}
+
+.title {
+font-weight: 300;
+position: absolute;
+left: 1.2rem;
+top: 1rem;
+}
+
+.bar {
+position: absolute;
+top: 4rem;
+left: 1rem;
+height: .2rem;
+width: 10rem;
+}
+
+.emptybar {
+background-color: #50525793;
+width: 100%;
+height: 100%;
+}
+
+.filledbar {
+position: absolute;
+top: 0px;
+z-index: 3;
+width: 0px;
+height: 100%;
+background: rgb(0,154,217);
+background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+width: 9rem;
+transition: 0.4s ease-out;
+}
+
+.created{
+color: rgba(0,0,0,.5);
+position: absolute;
+left: 1rem;
+top: 5.5rem;
+font-size: small;
+}
+.modified{
+color: rgba(0,0,0,.5);
+position: absolute;
+left: 1rem;
+top: 7rem;
+font-size: small;
+}
+
+/* Grid styling */
+
+.existinglist-maingrid{
+height: 100vh;
+overflow: hidden;
+background-image: url(../../Assets/Icons/background1.png);
+justify-content: center;
+}
+
+.existinglist-header{
+max-height: 4.8rem;
+}
+.existinglist-title{
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+max-height: 6rem;
+}
+
+.existinglist-body{
+/* overflow-y: scroll; */
+max-height: 25rem;
+}
+
+.existinglist-footer{
+
+max-height: 3.5rem;
+bottom: 0px;
+}
+
+/* scrollbar style */
+
+#style::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+background-color: #F5F5F5;
+border-radius: 10px;
+}
+
+#style::-webkit-scrollbar
+{
+width: 6px;
+background-color: #F5F5F5;
+}
+
+#style::-webkit-scrollbar-thumb
+{
+border-radius: 10px;
+background-image: -webkit-gradient(linear,
+                   left bottom,
+                   left top,
+                   color-stop(0.44, rgb(135,206,250)),
+                   color-stop(0.72, rgb(73, 157, 209)),
+                   color-stop(0.86, rgb(25, 128, 192)));
+}

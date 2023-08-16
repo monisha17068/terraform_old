@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.main{
+  background-image: url(../../Assets/Icons/background1.png);
+  min-width: 100vw ;
+  min-height: 100vh;
+}
+.projectService1{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  top: 50%;
+  min-width: 40rem;
+  min-height: 18.5rem;
+  transform: translate(-50%, -50%);
+  border: 0px solid #000000;
+  background-color:  #dadbdf3b;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.card-container{
+  display: flex;
+  margin: .5rem;
+  justify-content: center;
+  align-items: center;
+  /* column-gap: 2rem; */
+}

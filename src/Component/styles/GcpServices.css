@@ -1,0 +1,180 @@
+CSS Pretty Print
+ 
+body {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 min-height: 100vh;
+	 font-family: 'Poppins', sans-serif;
+	 color: #fff;
+	 background-color: #333;
+}
+ .GCPcontainer{
+	 flex-grow: 1;
+	 /* max-width: 960px; */
+	 margin-left: auto;
+	 margin-right: auto;
+	 padding-left: 20px;
+	 padding-right: 20px;
+}
+.GCPServicesContainer .cards {
+	 display: grid;
+	 grid-template-columns: repeat(4, 1fr);
+	 grid-gap: 30px;
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+}
+.GCPServicesContainer .cards__item {
+	 height: 280px;
+	 width: 280px;
+}
+ .GCPServicesContainer .servicescard {
+	 position: relative;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 background-color: #000;
+}
+ .GCPServicesContainer .servicescard::before {
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 z-index: 20;
+	 width: 50%;
+	 height: 100%;
+	 background-color: rgba(255, 255, 255, 0.1);
+	 pointer-events: none;
+}
+.GCPServicesContainer .servicescard {
+	/* background-image: linear-gradient(45deg, #fe9a01, #ff9b00ab) !important; */
+	background-color: #00000033 !important;
+	border-radius: 15px;
+	width: 250px;
+	height: 250px;
+}
+/* .GCPServicesContainer .servicescard:nth-child(1) {
+	 background-image: linear-gradient(45deg, #fe9a01, #ef970e75);
+}
+ .servicescard:nth-child(2) {
+	 background-image: linear-gradient(45deg, rgb(135,206,250), rgb(25, 128, 192));
+}
+ .servicescard:nth-child(3) {
+	 background-image: linear-gradient(45deg, #cfcfcf, #494949);
+}
+.servicescard:nth-child(4) {
+	background-image: linear-gradient(45deg, rgb(135,206,250), rgb(25, 128, 192));
+} */
+.GCPServicesContainer .servicescard__frame {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
+	 text-align: center;
+}
+.GCPServicesContainer .servicescard__picture {
+	 margin-bottom: 12px;
+	 filter: invert(1);
+}
+.GCPServicesContainer .servicescard__picture img {
+	 display: block;
+	 max-width: 100%;
+	 height: auto;
+}
+.GCPServicesContainer .servicescard__title {
+	 margin: 0;
+	 font-weight: 700;
+	 font-size: 18px;
+	 text-transform: uppercase;
+}
+.GCPServicesContainer .servicescard__overlay {
+	 position: absolute;
+	 bottom: 6px;
+	 right: 8px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 width: 45px;
+	 height: 45px;
+	 background-color: #fff;
+	 border-radius: 50%;
+	 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	 transition: 0.5s;
+	 cursor: pointer;
+}
+.GCPServicesContainer .servicescard__overlay::before {
+	 content: "More";
+	 font-size: 11px;
+	 text-transform: uppercase;
+	 font-weight: bolder;
+	 letter-spacing: 0.02em;
+}
+.GCPServicesContainer .servicescard__overlay:hover, .GCPServicesContainer .servicescard__overlay:focus {
+	 bottom: 0;
+	 right: 0;
+	 width: 100%;
+	 height: 100%;
+	 box-shadow: none;
+	 border-radius: 0;
+	 opacity: 0.9;
+}
+.GCPServicesContainer .servicescard__overlay:hover::before,  .GCPServicesContainer .servicescard__overlay:focus::before {
+	 content: none;
+}
+ .servicescard:nth-child(1) .servicescard__overlay {
+	 background-image: linear-gradient(fff);
+}
+ .servicescard:nth-child(2) .servicescard__overlay {
+	 background-image: linear-gradient(fff);
+}
+ .servicescard:nth-child(3) .servicescard__overlay {
+	 background-image: linear-gradient(fff);
+}
+.GCPServicesContainer .servicescard__content {
+	 z-index: 1;
+	 padding: 20px;
+	 line-height: 1.4;
+	 opacity: 0;
+	 visibility: hidden;
+	 box-sizing: border-box;
+	 pointer-events: none;
+	 transition: 0s;
+}
+ .servicescard__overlay:hover ~ .servicescard__content {
+	 opacity: 1;
+	 visibility: visible;
+	 transition: 0.2s 0.3s;
+}
+ .servicescard__content h2 {
+	 margin: 0;
+	 margin-bottom: 16px;
+}
+ 
+.template_btn{
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	bottom: -35%;
+	right: 42%;
+	width: 200px !important;
+	font-weight: bold;
+}
+
+.temp_btn_style{
+	background-color: #ea4335 !important;
+	color: #fff !important;
+	font-weight: bold !important;
+	font-size: 16px !important;
+	padding: 10px !important;
+}
+.ServicesContainer input {  
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+  }

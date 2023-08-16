@@ -1,0 +1,91 @@
+/* .AwsTemp-main .ServicesContainer{
+
+      align-items:none !important;
+
+  } */
+
+  .template-subheading{
+    text-align: center;
+  }
+
+  .awsTempFlexContainer{
+    display: flex;
+    justify-content: space-around !important;
+    margin-bottom: 40px;
+  }
+  .awsTempFlexContainer input, .awsTempFlexContainer label{
+    font-size: 12px;
+  }
+  .awsTempFlexContainer .drop-down {
+    font-size: 12px;
+    height: 36px;
+  }
+  .awsTempFlexitem{
+    width: 285px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 10px;
+    /* background-color: #dfdfdf; */
+  }
+
+  .awstempitem1,.awstempitem2{
+    min-height: 100px;
+    max-height: 72vh;
+    overflow-y: auto;
+  }
+
+  /* scrollbar style */
+
+#style::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+background-color: #F5F5F5;
+border-radius: 10px;
+}
+
+#style::-webkit-scrollbar
+{
+width: 6px;
+background-color: #F5F5F5;
+}
+
+#style::-webkit-scrollbar-thumb
+{
+border-radius: 10px;
+background-image: -webkit-gradient(linear,
+                   left bottom,
+                   left top,
+                   color-stop(0.44, rgb(135,206,250)),
+                   color-stop(0.72, rgb(73, 157, 209)),
+                   color-stop(0.86, rgb(25, 128, 192)));
+}
+
+.templateFooter{
+  margin: 10px auto;
+} 
+.awsTempRadio span{
+  font-size: 12px;
+}
+
+.awsTempRadio label{
+  margin: 4px 0px;
+  width: 84px;
+}
+.awsTempRadioPublicSubnet span , .awsTempRadioPrivateSubnet span{
+  font-size: 12px;
+  padding: 5px 0px;
+  margin-right: 2px;
+}
+.awsTempRadioPublicSubnet label{
+  width: 135px;
+  margin: 2px -4px;
+}
+.awsTempRadioPrivateSubnet label{
+  width: 135px;
+  margin: 2px -4px;
+
+}
+.awsTempcheckbox span{
+font-size: 14px;
+}
